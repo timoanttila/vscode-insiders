@@ -1,6 +1,0 @@
-{
-	"extends": "./node_modules/@vangware/configs/.tsconfig.json",
-	"compilerOptions": {
-		"outDir": "./dist"
-	}
-}
