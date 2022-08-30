@@ -1,0 +1,21 @@
+{
+  "name": "pahaporo",
+  "displayName": "Pahaporo Theme",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Pahaporo Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./pahaporo-theme.json"
+      }
+    ]
+  }
+}

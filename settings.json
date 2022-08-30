@@ -48,7 +48,7 @@
     "**/node_modules/**": true,
     "**/bower_components/**": true
   },
-  "fileheader.custom_template_path": "/Users/timo/Projects/vscode-settings/fileheaders/",
+  "fileheader.custom_template_path": "~/.vscode-insiders/fileheaders/",
   "fileheader.file_suffix_mapping": {
     ".php": "PHP"
   },
@@ -164,12 +164,12 @@
     "containers",
     "document"
   ],
-  "gitlens.codeLens.enabled": false,
+  "gitlens.codeLens.enabled": true,
   "terminal.integrated.lineHeight": 1,
   "terminal.integrated.enablePersistentSessions": false,
   "webhint.enableTelemetry": "disabled",
   "editor.accessibilitySupport": "off",
-  "javascript.suggest.enabled": false,
+  "javascript.suggest.enabled": true,
   "typescript.suggest.autoImports": false,
   "cssvar.files": [
     "content/themes/**/*.css"
@@ -254,11 +254,11 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "telemetry.telemetryLevel": "off",
-  "workbench.colorTheme": "Dark+ Material",
+  "workbench.colorTheme": "Dracula Soft",
   "gitlens.advanced.messages": {
     "suppressLineUncommittedWarning": true
   },
-  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "vetur.format.options.useTabs": true,
   "editor.insertSpaces": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -284,7 +284,7 @@
   "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.enable": false,
   "phpserver.browser": "google-chrome",
-  "volar.completion.preferredAttrNameCase": "auto-camel",
+  "volar.completion.preferredAttrNameCase": "camel",
   "volar.completion.preferredTagNameCase": "pascal",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "editor.minimap.enabled": false,
@@ -293,18 +293,14 @@
   "volar.codeLens.scriptSetupTools": true,
   "workbench.editor.splitInGroupLayout": "vertical",
   "diffEditor.codeLens": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
   "editor.find.addExtraSpaceOnTop": false,
-  "javascript.format.insertSpaceAfterConstructor": true,
   "scm.diffDecorationsIgnoreTrimWhitespace": "true",
   "gitlens.currentLine.enabled": false,
   "editor.autoClosingBrackets": "always",
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "javascript.preferences.useAliasesForRenames": false,
   "editor.suggest.showReferences": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
-  "javascript.referencesCodeLens.enabled": true,
   "debug.terminal.clearBeforeReusing": true,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
@@ -314,9 +310,8 @@
   "typescript.inlayHints.variableTypes.suppressWhenTypeMatchesName": false,
   "files.trimTrailingWhitespace": true,
   "typescript.format.insertSpaceAfterConstructor": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces": true,
-  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
@@ -324,21 +319,21 @@
   "workbench.colorCustomizations": {
     "editorBracketHighlight.unexpectedBracket.foreground": "#ff0000"
   },
-  "editor.tokenColorCustomizations": {
-    "functions": "#61d89f",
-    "textMateRules": [
-      {
-        "scope": "keyword.operator",
-        "settings": {
-          "foreground": "#ed1111"
-        }
-      },
-      {
-        "scope": "variable.other",
-        "settings": {
-          "foreground": "#ddd"
-        }
-      }
-    ]
-  },
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "gitlens.blame.ignoreWhitespace": true,
+  "editor.language.brackets": [],
+  "prettier.configPath": "~/.vscode-insiders/.prettierrc",
+  "prettier.ignorePath": "~/.vscode-insiders/.prettierignore",
+  "prettier.printWidth": 1000,
+  "prettier.singleQuote": true,
+  "eslint.packageManager": "yarn",
+  "prettier.semi": false,
+  "javascript.format.insertSpaceAfterSemicolonInForStatements": false,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove",
+  "css.completion.completePropertyWithSemicolon": false,
+  "less.completion.completePropertyWithSemicolon": false,
+  "scss.completion.completePropertyWithSemicolon": false
 }
