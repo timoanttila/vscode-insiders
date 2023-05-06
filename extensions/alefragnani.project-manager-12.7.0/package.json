@@ -1051,10 +1051,9 @@
 		"publisherId": "3fbdef65-bdf5-4723-aeaf-9e12a50546ef",
 		"publisherDisplayName": "Alessandro Fragnani",
 		"targetPlatform": "undefined",
-		"isApplicationScoped": false,
-		"updated": true,
+		"updated": false,
 		"isPreReleaseVersion": false,
-		"preRelease": false,
-		"installedTimestamp": 1662187403508
+		"installedTimestamp": 1683299636256,
+		"preRelease": false
 	}
 }
