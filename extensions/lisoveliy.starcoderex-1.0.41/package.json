@@ -1,0 +1,113 @@
+{
+	"name": "starcoderex",
+	"displayName": "StarCoderEx (AI code generator)",
+	"description": "Extension for using alternative GitHub Copilot (StarCoder API) in VSCode",
+	"repository": "https://github.com/Lisoveliy/starcoderex",
+	"icon": "logo.png",
+	"version": "1.0.41",
+	"publisher": "Lisoveliy",
+	"engines": {
+		"vscode": "^1.67.0"
+	},
+	"categories": [
+		"Other",
+		"Formatters",
+		"Machine Learning",
+		"Programming Languages",
+		"Snippets"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "starcoderex.ScanSelPrompt",
+					"group": "StarCoderEx"
+				},
+				{
+					"command": "starcoderex.TokenScreen",
+					"group": "StarCoderEx"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "starcoderex.ScanSel",
+				"title": "Init prompt with selected code",
+				"category": "StarCoderEx"
+			},
+			{
+				"command": "starcoderex.ScanSelPrompt",
+				"title": "Init prompt with selected code",
+				"category": "StarCoderEx"
+			},
+			{
+				"command": "starcoderex.TokenScreen",
+				"title": "Enter new token",
+				"category": "StarCoderEx"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "starcoderex.ScanSel",
+				"key": "ctrl+alt+p"
+			}
+		],
+		"configuration": [
+			{
+				"title": "StarCoderEx",
+				"properties": {
+					"starcoderex.countofrequests": {
+						"type": "integer",
+						"default": 4
+					},
+					"starcoderex.bearertoken": {
+						"type": "string",
+						"default": ""
+					},
+					"starcoderex.apiurl": {
+						"type": "string",
+						"default": "https://api-inference.huggingface.co/models/bigcode/starcoder"
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^8.1.0",
+		"@types/mocha": "^10.0.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.67.0",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"@vscode/test-electron": "^2.3.0",
+		"eslint": "^8.39.0",
+		"glob": "^8.1.0",
+		"mocha": "^10.2.0",
+		"typescript": "^5.0.4"
+	},
+	"dependencies": {
+		"@types/node-fetch": "^2.6.3",
+		"node-fetch": "^2.6.3"
+	},
+	"__metadata": {
+		"id": "e7e5366a-9a88-4c00-a047-9cc4ceca18b9",
+		"publisherId": "c6f22339-f321-4714-94fb-93cf4af656a2",
+		"publisherDisplayName": "Lisoveliy",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": true,
+		"isPreReleaseVersion": false,
+		"installedTimestamp": 1686630440483,
+		"preRelease": false
+	}
+}
